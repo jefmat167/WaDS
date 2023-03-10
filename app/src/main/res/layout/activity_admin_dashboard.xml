@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_three"
+    tools:context=".AdminDashboard">
+
+    <Button
+        android:id="@+id/customer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_btn"
+        android:padding="5dp"
+        android:text="Customers"
+        android:textColor="#6527F3"
+        app:layout_constraintEnd_toEndOf="@+id/vendors"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/vendors"
+        app:layout_constraintTop_toBottomOf="@+id/vendors"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/vendors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bg_btn"
+        android:text="Vendors"
+        android:textColor="#6527F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/complaint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_btn"
+        android:padding="5dp"
+        android:text="Complaints"
+        android:textColor="#6527F3"
+        app:layout_constraintEnd_toEndOf="@+id/customer"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/customer"
+        app:layout_constraintTop_toBottomOf="@+id/customer"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn"
+        android:text="Sign out"
+        android:textColor="#6527F3"
+        app:layout_constraintEnd_toEndOf="@+id/complaint"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/complaint"
+        app:layout_constraintTop_toBottomOf="@+id/complaint"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
